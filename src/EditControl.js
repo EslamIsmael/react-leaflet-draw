@@ -88,6 +88,7 @@ function EditControl(props) {
 }
 
 function createDrawElement(props, context) {
+  console.log({ props });
   const { layerContainer } = context;
   const { draw, edit, position } = props;
   const options = {
