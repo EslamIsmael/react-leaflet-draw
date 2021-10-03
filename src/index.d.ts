@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Draw from 'leaflet-draw';
 import type { DrawOptions, EditOptions, ControlPosition } from 'leaflet';
 
 
