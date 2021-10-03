@@ -1,5 +1,6 @@
 import * as React from 'react';
-import type { DrawOptions, EditOptions, ControlPosition } from 'leaflet';
+// import type { DrawOptions, EditOptions, ControlPosition } from 'leaflet';
+import L from 'leaflet';
 
 
 interface EditControlProps {
@@ -19,12 +20,12 @@ interface EditControlProps {
   onCreated?: Function,
   onMounted?: Function;
   draw: {
-    polyline?: DrawOptions.PolylineOptions | boolean;
-    polygon?: DrawOptions.PolygonOptions | boolean;
-    rectangle?: DrawOptions.RectangleOptions | boolean;
-    circle?: DrawOptions.CircleOptions | boolean;
-    marker?: DrawOptions.MarkerOptions | boolean;
-    circlemarker?: DrawOptions.CircleOptions | boolean;
+    polyline?: L.DrawOptions.PolylineOptions | boolean;
+    polygon?: L.DrawOptions.PolygonOptions | boolean;
+    rectangle?: L.DrawOptions.RectangleOptions | boolean;
+    circle?: L.DrawOptions.CircleOptions | boolean;
+    marker?: L.DrawOptions.MarkerOptions | boolean;
+    circlemarker?: L.DrawOptions.CircleOptions | boolean;
   },
 
 
